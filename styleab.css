@@ -47,3 +47,38 @@
 .header nav a:hover{
     font-weight: bold;
 }
+
+
+
+/* CONTENT */
+
+.content{
+    /* height: 350px;
+    width: 75%; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #eaeaea;
+    /* align-items: center; */
+}
+
+.content img{
+    height: 300px;
+    width: 300px;
+
+    /* margin: auto; */
+}
+
+.content .teks{
+    height: 50px;
+
+    background-color: aqua;
+}
+
+.teks h3{
+    display: flex;
+    align-content:space-around ;
+
+}
