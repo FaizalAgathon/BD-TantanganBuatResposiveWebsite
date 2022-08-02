@@ -8,7 +8,7 @@
 
 .container{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 
@@ -16,9 +16,9 @@
 /* HEADER */
 
 .header{
-    height: 50px;
-    padding: 0 20px; 
-    margin-bottom: 30px;
+    height: 60px;
+    /* padding: 0 20px;  */
+    margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
     
@@ -27,18 +27,22 @@
 
 .header h1{
     padding: 0 20px;
+
+    text-align: center;
+    line-height: 60px;
 }
 
 .header nav{
-    width: fit-content;
+    width: 300px;
+    
     display: flex;
-    padding: 0 20px;
-    justify-content: space-between;
 }
 
 .header nav a{
-    padding: 0 20px;
+    width: 200px;
+
     display: flex;
+    justify-content: center;
     align-items: center;
 
     text-decoration: none;
@@ -50,12 +54,120 @@
 
 
 
-
 /* CONTENT */
 
+.content{
+    max-width: 1000px;
+    /* height: auto; */
+    margin: auto;
+    padding: 20px;
+    
+    border: 5px solid #b7b6b6;
+    border-radius: 20px;
 
+    background-color: #e3dfdfc0;
+}
 
+.op{
+    height: fit-content;
+    padding-bottom: 20px;
+    display: flex;
 
+    overflow: auto;
+
+    border-bottom: 3px solid;
+}
+
+.op-img1{
+    width: 220px;
+    height: 310px;
+    margin-right: 20px;
+
+    border-radius: 10px;
+
+    float: left;
+
+    order: 1;
+}
+
+.op-text {
+    display: block;
+    width: 700px;
+    height: fit-content;
+    order: 2;
+    text-align: center;
+    float: inline-start;
+    
+    /* border: 1px solid skyblue; */
+}
+
+.op-text h2{
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.op-text p{
+    padding-bottom: 20px;
+    border-bottom: 3px solid;
+}
+
+.op-img2{
+    width: 700px;
+
+    order: 3;
+}
+
+.intro{
+    display: flex;
+    padding-bottom: 20px;
+
+    border-bottom: 3px solid;
+}
+
+.intro img{
+    max-width: 200px;
+    max-height: 325px;
+    margin: 25px 25px 0 25px;
+
+    float: left;
+}
+
+.intro h2{
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.intro-p1{
+    margin-top: 20px;
+    padding-bottom: 10px;
+
+    border-bottom: 3px solid;
+}
+
+.intro-p2{
+    display: inline-block;
+    padding-top: 10px;
+    word-wrap: break-word;
+}
+
+.chara{
+    display: flex;
+    height: 300px;
+    overflow: auto;
+
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    
+    border: 2px solid cyan;
+}
+
+.chr a{
+    text-align: center;
+    text-decoration: none;
+    
+    color: #000;
+    
+}
 
 
 /* FOOTER */
@@ -74,6 +186,17 @@
 }
 
 
+
+
+/* RESPONSIVE BREAKPOINT */
+
+@media (min-width: 1000px) {
+    
+    .content{
+        margin: 0 30px;
+    }
+
+}
 
 
 
